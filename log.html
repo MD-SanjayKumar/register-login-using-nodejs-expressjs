@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container-fluid my-3">
+        <h4 class="h4 mb-4 display-6">SignIn Page</h4>
+        <form action="http://localhost:6060/user_lg" method="post" enctype="application/x-www-form-urlencoded">
+            <div class="form-floating mb-3">
+                <input type="email" name="userid" id="userid" placeholder="Enter Email" class="form-control w-25">
+                <label for="userid" class="form-label">Email</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" name="pwd" id="pwd" placeholder="Enter Password" class="form-control w-25">
+                <label for="pwd" class="form-label">Password</label>
+            </div>
+            <input type="submit" value="Sign in" class="btn btn-dark w-25 mb-2"><br>
+            <p class="lead mt-2"><em>Authentication with </em><a href="http://localhost:6060/auth/google"><img
+                        src="https://seeklogo.com/images/G/google-logo-33C85C2215-seeklogo.com.png" width="125"
+                        height="39" alt="Google logo"></a></p>
+            <a class="link-dark" href="http://localhost:6060/magiclink">Sign In using Link</a>
+        </form>
+    </div>
+</body>
+</html>
